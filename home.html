@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+ 
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">Book Club</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation"></button>
+            <span class=navbar-toggler-icon></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h3>Book Club Members</h3>
+    <table class="table table-hover">
+        <th>
+            <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+            </tr>
+        </th>
+        <tbody id="tbl" >
+            <tr>
+                <td>Kim</td>
+                <td>Kardashian</td>
+                <td>kimkardashian@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Khloe</td>
+                <td>Kardashian</td>
+                <td>khloekardashian@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kourtney</td>
+                <td>Kardashian</td>
+                <td>kourtneykardashian@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kendall</td>
+                <td>Jenner</td>
+                <td>kendalljenner@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kylie</td>
+                <td>Jenner</td>
+                <td>kyliejenner@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kris</td>
+                <td>Jenner</td>
+                <td>krisjenner@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h6>Join the Book Club!</h6> 
+    <form id="form" >
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+            </div>
+            <div class="col">
+                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+            </div>
+            <button type="submit" id="myBtn" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="home.js"></script>
+
+</body>
+</html>
